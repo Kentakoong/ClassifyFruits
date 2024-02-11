@@ -11,6 +11,10 @@
 		1DEF1BC62B7790A8001AC412 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF1BC52B7790A8001AC412 /* ContentView.swift */; };
 		1DEF1BC82B7790A9001AC412 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DEF1BC72B7790A9001AC412 /* Assets.xcassets */; };
 		1DEF1BCB2B7790A9001AC412 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DEF1BCA2B7790A9001AC412 /* Preview Assets.xcassets */; };
+		1DEF1BD32B7790E8001AC412 /* FruitsClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF1BD22B7790E8001AC412 /* FruitsClassifier.mlmodel */; };
+		1DEF1BD62B7790FA001AC412 /* ImageClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF1BD52B7790FA001AC412 /* ImageClassifier.swift */; };
+		1DEF1BD92B779193001AC412 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF1BD82B779193001AC412 /* UIImage+Extension.swift */; };
+		1DEF1BDB2B779291001AC412 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF1BDA2B779291001AC412 /* Double+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		1DEF1BC52B7790A8001AC412 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1DEF1BC72B7790A9001AC412 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DEF1BCA2B7790A9001AC412 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1DEF1BD22B7790E8001AC412 /* FruitsClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FruitsClassifier.mlmodel; sourceTree = "<group>"; };
+		1DEF1BD52B7790FA001AC412 /* ImageClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassifier.swift; sourceTree = "<group>"; };
+		1DEF1BD82B779193001AC412 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		1DEF1BDA2B779291001AC412 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,9 @@
 		1DEF1BC22B7790A8001AC412 /* ClassifyFruits */ = {
 			isa = PBXGroup;
 			children = (
+				1DEF1BD72B779181001AC412 /* Extensions */,
+				1DEF1BD42B7790EE001AC412 /* Classifier */,
+				1DEF1BD12B7790B6001AC412 /* Model */,
 				1DEF1BC32B7790A8001AC412 /* ClassifyFruitsApp.swift */,
 				1DEF1BC52B7790A8001AC412 /* ContentView.swift */,
 				1DEF1BC72B7790A9001AC412 /* Assets.xcassets */,
@@ -65,6 +76,31 @@
 				1DEF1BCA2B7790A9001AC412 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1DEF1BD12B7790B6001AC412 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1DEF1BD22B7790E8001AC412 /* FruitsClassifier.mlmodel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1DEF1BD42B7790EE001AC412 /* Classifier */ = {
+			isa = PBXGroup;
+			children = (
+				1DEF1BD52B7790FA001AC412 /* ImageClassifier.swift */,
+			);
+			path = Classifier;
+			sourceTree = "<group>";
+		};
+		1DEF1BD72B779181001AC412 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1DEF1BD82B779193001AC412 /* UIImage+Extension.swift */,
+				1DEF1BDA2B779291001AC412 /* Double+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DEF1BD62B7790FA001AC412 /* ImageClassifier.swift in Sources */,
+				1DEF1BD32B7790E8001AC412 /* FruitsClassifier.mlmodel in Sources */,
+				1DEF1BDB2B779291001AC412 /* Double+Extension.swift in Sources */,
+				1DEF1BD92B779193001AC412 /* UIImage+Extension.swift in Sources */,
 				1DEF1BC62B7790A8001AC412 /* ContentView.swift in Sources */,
 				1DEF1BC42B7790A8001AC412 /* ClassifyFruitsApp.swift in Sources */,
 			);
